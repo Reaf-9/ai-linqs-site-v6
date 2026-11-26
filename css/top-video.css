@@ -11,3 +11,16 @@
   .kv--video .kv-copy{top:calc(34*var(--u))}
   .top-video .lead-sec{padding-top:48px}
 }
+
+/* 人物の切り抜きを映像の手前に置く（足元は映像の下に少しはみ出す） */
+.kv--video{height:calc(58.5*var(--u))}
+.kv--video .kv-photo{height:calc(50*var(--u))}
+.kv--video .kv-people{top:calc(8.4*var(--u))}
+.top-video .lead-sec{padding-top:calc(2*var(--u))}
+@media (max-width:900px){
+  .kv--video{height:calc(70*var(--u))}
+  .kv--video .kv-photo{height:calc(58*var(--u))}
+  .kv--video .kv-people{top:calc(15*var(--u))}
+  .kv--video .kv-copy{top:calc(40*var(--u))}
+  .top-video .lead-sec{padding-top:16px}
+}
