@@ -12,11 +12,14 @@
 <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon-180.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@700;800&amp;family=Noto+Sans+JP:wght@400;500;700;900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@700;800&amp;family=Noto+Sans+JP:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/top.css">
+<link rel="preload" as="image" href="assets/kv-bg.jpg">
 <script src="js/main.js" defer></script>
+<script src="js/top.js" defer></script>
 </head>
-<body>
+<body class="top">
 <a class="skip" href="#main">本文へスキップ</a>
 <header class="site-header">
   <div class="header-inner">
@@ -34,164 +37,79 @@
   </nav>
 </header>
 <main id="main">
-<section class="hero" id="hero">
-  <div class="hero-inner">
-    <div>
-      <p class="eyebrow">中小企業のための AI 導入パートナー</p>
-      <h1>「教育」「効率化」<br>だけで<br><em>終わらせない。</em></h1>
-      <p class="hero-sub"><strong>AI導入のゴールは、企業に利益を残すこと。</strong><br><span class="nw">AI実務研修・</span><span class="nw">右腕AIの構築・</span><span class="nw">月額伴走・</span><span class="nw">業務システム開発。</span><br>2週間に1回、経営者の隣に座ります。</p>
-      <p class="hero-philosophy">― 人とAIのハイブリッド経営を、当たり前に。</p>
-      <div class="btn-row"><a class="btn btn--line " href="contact.html#contact" data-line-cta><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3C6.5 3 2 6.6 2 11.1c0 4 3.6 7.4 8.400 8 .6.1 1.300.4 1.500.8.2.4.1 1 .1 1.400l-.1.800c0 .3-.2 1 .900.600s5.700-3.400 7.700-5.800C21.500 15.300 22 13.300 22 11.100 22 6.600 17.500 3 12 3z"/></svg>LINEで無料相談</a><a class="btn btn--ghost-white " href="price.html">料金表を見る</a></div>
-    </div>
-    <div class="hero-visual">
-      <img src="assets/il-service-advisor.jpg" alt="経営者の隣で、数字を見ながら一緒に考える様子" width="1200" height="800">
-      <p class="hero-chip"><b>2<small>週間に1回</small></b>経営者の隣で伴走</p>
-    </div>
-  </div>
+<section class="kv" id="hero">
+  <div class="kv-photo"><img class="kv-bg" src="assets/kv-bg.jpg" alt="" width="1672" height="941" fetchpriority="high"></div>
+  <div class="kv-people-wrap"><img class="kv-people" src="assets/kv-people.png" alt="神戸の港を見下ろしながら、経営者と右腕AIが並んで歩いている" width="1422" height="1106"></div>
+  <h1 class="kv-copy"><span class="band"><span>「教育」「効率化」</span></span><span class="band"><span>だけで</span></span><span class="band"><span>終わらせない。</span></span></h1>
+  <span class="kv-scroll" aria-hidden="true"></span>
 </section>
+
+<section class="lead-sec" id="lead">
+  <h2 class="reveal">AI導入のゴールは<br>企業に利益を残すこと</h2>
+  <p class="reveal"><span>アイリンクスは「AIを入れた」だけで終わらせない。</span><span>設計・導入・定着・改善まで伴走し、</span><span>「採用費」「外注費」「残業代」「機会損失」など</span><span>多角的に中小企業の利益を改善すること</span><span>を目指しています。</span></p>
+</section>
+
 <div class="stats" aria-label="AI Linqs の特徴">
   <div class="stats-inner">
-    <div class="stat"><p class="stat-num">7<small>業種</small></p><p class="stat-label">対応業種</p></div>
+    <div class="stat"><p class="stat-num"><span data-count="7">7</span><small>業種</small></p><p class="stat-label">対応業種</p></div>
     <div class="stat"><p class="stat-num is-text">兵庫・大阪</p><p class="stat-label">対応地域</p></div>
-    <div class="stat"><p class="stat-num">2<small>週に1回</small></p><p class="stat-label">現場伴走の頻度</p></div>
-    <div class="stat"><p class="stat-num">30<small>万円</small><small class="to">→</small> <span class="to">0</span><small class="to">円</small></p><p class="stat-label">初期構築費（年間契約の場合）</p></div>
+    <div class="stat"><p class="stat-num"><span data-count="2">2</span><small>週に1回</small></p><p class="stat-label">現場伴走の頻度</p></div>
+    <div class="stat"><p class="stat-num">30<small>万円</small><small class="to">→</small> <span class="to" data-count="0" data-from="30">0</span><small class="to">円</small></p><p class="stat-label">初期構築費（年間契約の場合）</p></div>
   </div>
 </div>
 
-<section class="section section--bg" id="issues">
+<section class="clients" id="clients">
+  <h2 class="sec-title">導入企業様</h2>
+  <div class="logo-rows" aria-label="導入企業様のロゴ（掲載準備中）">
+    <div class="logo-row"><ul><li>ロゴ</li><li>ロゴ</li><li>ロゴ</li><li>ロゴ</li><li>ロゴ</li><li>ロゴ</li><li>ロゴ</li><li>ロゴ</li><li>ロゴ</li></ul><ul aria-hidden="true"><li>ロゴ</li><li>ロゴ</li><li>ロゴ</li><li>ロゴ</li><li>ロゴ</li><li>ロゴ</li><li>ロゴ</li><li>ロゴ</li><li>ロゴ</li></ul></div>
+    <div class="logo-row"><ul><li>ロゴ</li><li>ロゴ</li><li>ロゴ</li><li>ロゴ</li><li>ロゴ</li><li>ロゴ</li><li>ロゴ</li><li>ロゴ</li><li>ロゴ</li></ul><ul aria-hidden="true"><li>ロゴ</li><li>ロゴ</li><li>ロゴ</li><li>ロゴ</li><li>ロゴ</li><li>ロゴ</li><li>ロゴ</li><li>ロゴ</li><li>ロゴ</li></ul></div>
+    <div class="logo-row"><ul><li>ロゴ</li><li>ロゴ</li><li>ロゴ</li><li>ロゴ</li><li>ロゴ</li><li>ロゴ</li><li>ロゴ</li><li>ロゴ</li><li>ロゴ</li></ul><ul aria-hidden="true"><li>ロゴ</li><li>ロゴ</li><li>ロゴ</li><li>ロゴ</li><li>ロゴ</li><li>ロゴ</li><li>ロゴ</li><li>ロゴ</li><li>ロゴ</li></ul></div>
+  </div>
+  <p class="note">※ ロゴは掲載の許可をいただいた企業様から、順に入れていきます。</p>
+</section>
+
+<section class="why-now" id="why-now">
   <div class="container">
-    <p class="sec-label">よくあるお悩み</p>
-    <h2 class="sec-title">人を増やしても、<br>利益が残らない。</h2>
-    <p class="sec-lead">採用費・人件費・外注費・残業代。費用が増えるほど、利益は薄くなります。この構造こそが、AIで変えられる問題です。</p>
+    <h2 class="sec-title">人はもう採れない</h2>
+    <p class="sec-lead">兵庫県の最低賃金は、この11年で378円上がりました。<br>中小企業の「人が足りない」という声も、2015年以降でもっとも強い水準です。</p>
+    <figure class="chart-wrap reveal">
+      <div class="chart-head">
+        <h3>兵庫県の最低賃金と、中小企業の人手不足感</h3>
+        <p class="chart-legend"><span><i class="l-bar"></i>最低賃金（時間額・左の目盛り）</span><span><i class="l-line"></i>人手不足感（右の目盛り）</span></p>
+      </div>
+      <div class="chart"><svg viewBox="0 0 880 380" role="img" aria-labelledby="chartTitle chartDesc"><title id="chartTitle">兵庫県の最低賃金と、中小企業の人手不足感の推移</title><desc id="chartDesc">最低賃金は2015年度の794円から2026年度の1,172円へ上昇。人手不足感（不足超の幅）は2015年の19から2026年の42へ拡大。</desc><line class="grid" x1="56" x2="824" y1="336.0" y2="336.0"/><text x="46" y="340.0" text-anchor="end">600</text><line class="grid" x1="56" x2="824" y1="235.3" y2="235.3"/><text x="46" y="239.3" text-anchor="end">800</text><line class="grid" x1="56" x2="824" y1="134.7" y2="134.7"/><text x="46" y="138.7" text-anchor="end">1,000</text><line class="grid" x1="56" x2="824" y1="34.0" y2="34.0"/><text x="46" y="38.0" text-anchor="end">1,200</text><text x="834" y="340.0">0</text><text x="834" y="189.0">25</text><text x="834" y="38.0">50</text><text x="46" y="18" text-anchor="end">円</text><text x="834" y="18">ポイント</text><rect class="bar" x="70.1" y="238.4" width="35.8" height="97.6" style="transition-delay:0.00s"/><text x="88.0" y="356" text-anchor="middle">2015</text><rect class="bar" x="134.1" y="225.8" width="35.8" height="110.2" style="transition-delay:0.06s"/><text x="152.0" y="356" text-anchor="middle">16</text><rect class="bar" x="198.1" y="213.2" width="35.8" height="122.8" style="transition-delay:0.12s"/><text x="216.0" y="356" text-anchor="middle">17</text><rect class="bar" x="262.1" y="199.6" width="35.8" height="136.4" style="transition-delay:0.18s"/><text x="280.0" y="356" text-anchor="middle">18</text><rect class="bar" x="326.1" y="185.5" width="35.8" height="150.5" style="transition-delay:0.24s"/><text x="344.0" y="356" text-anchor="middle">19</text><rect class="bar" x="390.1" y="185.0" width="35.8" height="151.0" style="transition-delay:0.30s"/><text x="408.0" y="356" text-anchor="middle">20</text><rect class="bar" x="454.1" y="170.9" width="35.8" height="165.1" style="transition-delay:0.36s"/><text x="472.0" y="356" text-anchor="middle">21</text><rect class="bar" x="518.1" y="154.8" width="35.8" height="181.2" style="transition-delay:0.42s"/><text x="536.0" y="356" text-anchor="middle">22</text><rect class="bar" x="582.1" y="134.2" width="35.8" height="201.8" style="transition-delay:0.48s"/><text x="600.0" y="356" text-anchor="middle">23</text><rect class="bar" x="646.1" y="108.5" width="35.8" height="227.5" style="transition-delay:0.54s"/><text x="664.0" y="356" text-anchor="middle">24</text><rect class="bar" x="710.1" y="76.3" width="35.8" height="259.7" style="transition-delay:0.60s"/><text x="728.0" y="356" text-anchor="middle">25</text><rect class="bar is-last" x="774.1" y="48.1" width="35.8" height="287.9" style="transition-delay:0.66s"/><text x="792.0" y="356" text-anchor="middle">2026</text><path class="line" d="M88.0 221.2 L152.0 203.1 L216.0 142.7 L280.0 112.5 L344.0 94.4 L408.0 317.9 L472.0 203.1 L536.0 154.8 L600.0 166.9 L664.0 124.6 L728.0 112.5 L792.0 82.3"/><circle class="dot" cx="88.0" cy="221.2" r="4.5"/><circle class="dot" cx="152.0" cy="203.1" r="4.5"/><circle class="dot" cx="216.0" cy="142.7" r="4.5"/><circle class="dot" cx="280.0" cy="112.5" r="4.5"/><circle class="dot" cx="344.0" cy="94.4" r="4.5"/><circle class="dot" cx="408.0" cy="317.9" r="4.5"/><circle class="dot" cx="472.0" cy="203.1" r="4.5"/><circle class="dot" cx="536.0" cy="154.8" r="4.5"/><circle class="dot" cx="600.0" cy="166.9" r="4.5"/><circle class="dot" cx="664.0" cy="124.6" r="4.5"/><circle class="dot" cx="728.0" cy="112.5" r="4.5"/><circle class="dot" cx="792.0" cy="82.3" r="4.5"/><g class="lbl"><text class="v" x="88.0" y="256.4" text-anchor="middle" style="fill:#fff">794</text><text class="v" x="792.0" y="38.1" text-anchor="middle">1,172円</text><text class="v2" x="88.0" y="209.2" text-anchor="middle">19</text><text class="v2" x="762.0" y="80.3" text-anchor="end">42</text></g></svg></div>
+      <figcaption class="chart-src">出典：厚生労働省「地域別最低賃金改定状況」（各年度の兵庫県の時間額）／日本銀行神戸支店「企業短期経済観測調査（兵庫県）」雇用人員判断・全産業・中小企業、各年9月調査。<br>人手不足感は「不足」と答えた企業の割合から「過剰」と答えた企業の割合を引いた差（ポイント）で、大きいほど不足が強いことを表します。2020年は感染症の影響で一時的に下がっています。</figcaption>
+    </figure>
+    <p class="chart-msg reveal">賃金は上がり、人は足りない。<br>「人を増やして解決する」という選択肢は、年々むずかしくなっています。</p>
+  </div>
+</section>
+
+<section class="section" id="issues">
+  <div class="container">
+    <h2 class="sec-title">人を増やしても利益が残らない</h2>
+    <p class="sec-lead">採用費・人件費・外注費・残業代。費用が増えるほど、利益は薄くなります。<br>この構造こそが、AIで変えられる問題です。</p>
     <div class="grid-3 mt-56">
       <article class="pain-card reveal">
-        <img src="assets/issue-01.jpg" alt="" width="1200" height="800" loading="lazy">
-        <div class="pain-body"><h3>確認が、<br>社長に集まる</h3><p>判断・承認が経営者に集中し、売上が伸びるほど業務が詰まる。気づけば現場が止まる原因が自分になっている。</p></div>
+        <div class="pic"><img src="assets/v-issue-01.jpg" alt="" width="1200" height="800" loading="lazy"></div>
+        <div class="pain-body"><h3>確認が社長に集まる</h3><p>判断・承認が経営者に集中し、売上が伸びるほど業務が詰まる。気づけば現場が止まる原因が自分になっている。</p></div>
       </article>
       <article class="pain-card reveal">
-        <img src="assets/issue-02.jpg" alt="" width="1200" height="800" loading="lazy">
-        <div class="pain-body"><h3>人を増やしても、<br>ラクにならない</h3><p>採用しても管理工数が減らず、教育の費用がかさむ。人手は増えたのに、利益改善につながらない。</p></div>
+        <div class="pic"><img src="assets/v-issue-02.jpg" alt="" width="1200" height="800" loading="lazy"></div>
+        <div class="pain-body"><h3>業務が人についている</h3><p>特定の人がいないと業務が止まる。採用しても管理の手間は減らず、引き継ぎのたびにノウハウが失われていく。</p></div>
       </article>
       <article class="pain-card reveal">
-        <img src="assets/issue-03.jpg" alt="" width="1200" height="800" loading="lazy">
-        <div class="pain-body"><h3>紙・Excel・口頭が、<br>混在している</h3><p>情報がバラバラで、特定の人がいないと業務が止まる。引き継ぎも属人化し、ノウハウが蓄積されない。</p></div>
+        <div class="pic"><img src="assets/v-issue-03.jpg" alt="" width="1200" height="800" loading="lazy"></div>
+        <div class="pain-body"><h3>紙・Excel・口頭で回っている</h3><p>情報がバラバラで、探す・聞く・転記するに時間が消える。人手は増えたのに、利益改善につながらない。</p></div>
       </article>
     </div>
-  </div>
-</section>
-
-<section class="section" id="types">
-  <div class="container">
-    <p class="sec-label">AI Linqsのサービス区分け</p>
-    <h2 class="sec-title">研修・伴走・代行。<br>何が違うのか。</h2>
-    <p class="sec-lead">「AIを入れた」だけでは、利益は変わりません。御社の状況に合わせて3つの関わり方を使い分け、利益改善を最短で実現します。</p>
-    <div class="type-cards mt-56 reveal">
-      <article class="type-card">
-        <span class="badge badge--coaching">研修</span>
-        <h3>教える・育てる</h3>
-        <p class="type-desc">AIをどう使えばいいか分からない段階から、御社の担当者自身が使いこなせるようになるまで伴走します。外部への依存を減らし、社内の「AI人材」を育てます。</p>
-        <ul class="dash-list">
-          <li>AI実務研修</li>
-          <li>AIへの指示の出し方の設計・指導</li>
-          <li>社内AI活用ルールの策定支援</li>
-          <li>管理職・現場担当者向け研修</li>
-        </ul>
-        <div class="type-goal"><p><span>ゴール</span>御社の担当者がAIを自分で使いこなせる状態</p></div>
-      </article>
-      <article class="type-card">
-        <span class="badge badge--banso">伴走</span>
-        <h3>一緒に進む・定着させる</h3>
-        <p class="type-desc">右腕AIを設計・導入したあとも、2週間に1回現場に入り、課題を一緒に解きながら定着・改善を続けます。「入れて終わり」にしない継続支援です。</p>
-        <ul class="dash-list">
-          <li>右腕AIの設計・導入</li>
-          <li>2週間に1回の現場での打ち合わせ</li>
-          <li>業務の流れの改善を継続対応</li>
-          <li>AI活用の段階的な引き上げ支援</li>
-        </ul>
-        <div class="type-goal"><p><span>ゴール</span>御社の現場でAIが使い続けられる状態</p></div>
-      </article>
-      <article class="type-card">
-        <span class="badge badge--daiko">代行</span>
-        <h3>代わりにやる・仕組みを作る</h3>
-        <p class="type-desc">社内アプリ・業務システム・AIによる自動化の開発を、AI Linqsが実装して納品します。「動くシステム」として御社の業務に組み込み、外注費・管理の費用を構造から減らします。</p>
-        <ul class="dash-list">
-          <li>AIによる業務自動化の開発・実装</li>
-          <li>社内アプリ・業務システム制作</li>
-          <li>いまお使いの仕組みとAIの連携・自動化</li>
-          <li>紙・Excel運用のデジタル置き換え</li>
-        </ul>
-        <div class="type-goal"><p><span>ゴール</span>動くシステムを納品し、外注していた業務を社内へ</p></div>
-      </article>
-    </div>
-    <p class="sec-foot"><a class="text-link" href="service.html">サービスを詳しく見る</a></p>
-  </div>
-</section>
-
-<section class="section section--bg" id="map">
-  <div class="container">
-    <p class="sec-label">サービスの全体像</p>
-    <h2 class="sec-title">教育 → 効率化 → 利益改善。<br>3段階で、利益を残す。</h2>
-    <p class="sec-lead">まずは研修から始め、必要に応じて業務改善・システム開発へと広げられます。</p>
-    <dl class="define mt-40 reveal">
-      <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v4M12 17v4M3 12h4M17 12h4"/><circle cx="12" cy="12" r="3.2"/></svg></div>
-      <div><dt>右腕AIとは</dt><dd>御社の業務ルールと情報をもとに、確認・管理・作成などの特定の業務を支援・実行するAIの仕組みです。採用や外注の代わりではなく、「経営者の右腕」として働きます。</dd></div>
-    </dl>
-    <div class="tiers mt-24">
-      <article class="tier reveal">
-        <div class="tier-head is-1"><span class="phase">第1段階</span><span class="name">研修</span><span class="goal">教育</span></div>
-        <div class="tier-main">
-          <span class="badge badge--coaching">研修</span>
-          <h3>AI実務研修</h3>
-          <p>ChatGPT・Claudeなどの生成AIを、現場の実務で使えるところまで習得。経営者の言葉に合わせて内容を設計し、半年12回 または 2日間合宿で「使える人材」を育てます。</p>
-          <ul class="tags"><li>入口のサービス</li><li>助成金の対象となる場合あり</li><li>オンライン・対面対応</li></ul>
-        </div>
-        <div class="tier-price">
-          <p class="price-label">料金</p>
-          <p class="price">396,000<small>円／人（税別）</small></p>
-          <p class="price-note">助成金が認められた場合の試算：<br>実質 99,000円／人</p>
-        </div>
-      </article>
-      <article class="tier reveal">
-        <div class="tier-head is-2"><span class="phase">第2段階</span><span class="name">導入</span><span class="goal">効率化</span></div>
-        <div class="tier-main">
-          <span class="badge badge--banso">伴走</span>
-          <h3>右腕AI 導入・継続支援</h3>
-          <p>メール返信・シフト管理・確認業務・資料作成など、繰り返しの業務を右腕AIが代替。初期設計のあとも2週間に1回現場に入り、定着・改善を続けます。</p>
-          <ul class="tags"><li>2週間に1回 現場伴走</li><li>初期構築費30万円 → 年間契約で0円</li></ul>
-          <p class="promise">「見込みがなければ、始める前にそうお伝えします。」</p>
-        </div>
-        <div class="tier-price">
-          <p class="price-label">月額料金</p>
-          <p class="price">18<small>万円／月</small></p>
-          <p class="price-note">現場伴走・保守・機能改善込み</p>
-          <p class="price-sub">相談中心プラン：月7万円<span>LINE相談・オンライン中心</span></p>
-        </div>
-      </article>
-      <article class="tier reveal">
-        <div class="tier-head is-3"><span class="phase">第3段階</span><span class="name">開発</span><span class="goal">利益改善</span></div>
-        <div class="tier-main">
-          <span class="badge badge--daiko">代行・実装</span>
-          <h3>社内システム開発 ＋ 右腕AI実装</h3>
-          <p>会社全体の業務を整理し、既存システムの調整や専用の仕組みの開発を行います。紙・Excel運用の完全デジタル化、外注していた業務の内製化を実現し、外注費・管理の費用を構造から減らします。</p>
-          <ul class="tags"><li>動くシステムを納品</li><li>外注費の内製化</li><li>いまお使いの仕組みとの連携</li></ul>
-        </div>
-        <div class="tier-price">
-          <p class="price-label">料金</p>
-          <p class="price">50<small>万円〜</small></p>
-          <p class="price-note">業務範囲・規模により個別にお見積もり</p>
-        </div>
-      </article>
-    </div>
-    <p class="note mt-24">※ 助成金（人材開発支援助成金）は「認められた場合の試算」です。受給を保証するものではありません。</p>
-    <div class="btn-row"><a class="btn btn--blue" href="price.html">料金表を見る</a><a class="btn btn--ghost" href="service.html">サービスを詳しく見る</a></div>
   </div>
 </section>
 
 <section class="section section--navy" id="impact">
   <div class="container">
     <p class="sec-label">AI導入が、利益に出る</p>
-    <h2 class="sec-title">利益に効く、4つのポイント。</h2>
-    <p class="sec-lead">AIで変えられるのは、採用費だけではありません。正しく設計すれば、4つの角度から利益改善が見込めます。</p>
+    <h2 class="sec-title">削減した時間ではなく<br>「残る利益」で評価する</h2>
+    <p class="sec-lead">AIで変えられるのは、採用費だけではありません。<br>正しく設計すれば、4つの角度から利益改善が見込めます。</p>
     <div class="grid-2 mt-56">
       <article class="cost-card reveal"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17.5" cy="9" r="2.4"/><path d="M16.5 14.2c2.6.3 4.5 2.5 4.5 5.3"/></svg></div><div><h3><span>01</span>採用費・人件費</h3><p>右腕AIが反復業務を代替し、採用の費用と教育の手間を削減。人を増やさずに業務が回る体制をつくります。</p></div></article>
       <article class="cost-card reveal"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4"/><path d="M10 12h5M10 16h5"/></svg></div><div><h3><span>02</span>外注費</h3><p>外部委託していた資料作成・データ整理・管理業務を内製化し、外注費を圧縮。開発にかかる費用も長期的に下がります。</p></div></article>
@@ -208,15 +126,29 @@
   </div>
 </section>
 
-<section class="section" id="reasons">
+
+<section class="growth" id="map">
   <div class="container">
-    <p class="sec-label">選ばれる理由</p>
-    <h2 class="sec-title">“研修だけ・導入だけ”で、<br>終わらせない。</h2>
-    <div class="grid-3 why-grid mt-56">
-      <article class="why-card reveal"><span class="why-num" aria-hidden="true">01</span><h3>利益が出るか、<br>始める前に確認する</h3><p>まずお話を伺い、採用費・外注費・残業・取りこぼしの4点から効果を試算します。<strong>見込みがなければ、始める前にそうお伝えします。</strong>安心してご相談ください。</p></article>
-      <article class="why-card reveal"><span class="why-num" aria-hidden="true">02</span><h3>アナログ体制の企業の<br>支援が得意</h3><p>紙や口頭、Excelが中心でも大丈夫です。「うちはまだ紙がメインで」という会社こそ、伸びしろがあります。今のやり方を否定せず、現場に合わせて設計します。</p></article>
-      <article class="why-card reveal"><span class="why-num" aria-hidden="true">03</span><h3>定着まで、2週間に1回<br>隣で伴走</h3><p>資料を渡して終わりにしません。ご契約後は2週間に1回お伺いし、いまの課題をお聞きして解決策を一緒に見つけます。御社に合わせたオーダーメイドの仕組みを、一緒につくります。</p></article>
-    </div>
+    <h2 class="sec-title">「教育」から「実務定着」へ<br>そして利益改善へ</h2>
+  </div>
+  <div class="growth-stage">
+    <svg class="growth-slope" viewBox="0 0 1000 400" preserveAspectRatio="none" aria-hidden="true">
+      <defs>
+        <linearGradient id="gs1" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#1D6FCB"/><stop offset=".45" stop-color="#5C9BDD"/><stop offset=".8" stop-color="#A9CBEF"/><stop offset="1" stop-color="#fff"/></linearGradient>
+        <radialGradient id="gs2" cx="1" cy="1" r=".5"><stop offset="0" stop-color="#0B5CC4"/><stop offset="1" stop-color="#0B5CC4" stop-opacity="0"/></radialGradient>
+        <clipPath id="gsClip"><rect class="mask-rect" x="0" y="0" width="1000" height="400"/></clipPath>
+      </defs>
+      <g clip-path="url(#gsClip)">
+        <path d="M0 372 C330 352 700 250 1000 28 L1000 400 L0 400Z" fill="url(#gs1)"/>
+        <path d="M0 372 C330 352 700 250 1000 28 L1000 400 L0 400Z" fill="url(#gs2)"/>
+      </g>
+    </svg>
+    <ol class="growth-items">
+      <li class="g-item"><div class="g-pic"><img src="assets/v-step-01.jpg" alt="" width="640" height="640" loading="lazy"></div><div class="g-text"><p class="g-step">第1段階</p><h3><b>教育：</b>AI実務研修</h3><p>生成AIを、現場の実務で使えるところまで。半年12回 または 2日間合宿で、使いこなせる人を育てます。</p></div></li>
+      <li class="g-item"><div class="g-pic"><img src="assets/v-step-02.jpg" alt="" width="640" height="640" loading="lazy"></div><div class="g-text"><p class="g-step">第2段階</p><h3><b>効率化：</b><span class="nw">右腕AI構築・</span><span class="nw">月額伴走</span></h3><p>繰り返しの業務を右腕AIが代替。2週間に1回現場に入り、定着と改善を続けます。</p></div></li>
+      <li class="g-item"><div class="g-pic"><img src="assets/v-step-03.jpg" alt="" width="640" height="640" loading="lazy"></div><div class="g-text"><p class="g-step">第3段階</p><h3><b>利益改善：</b>経営数字で検証</h3><p>採用費・外注費・残業代・売上機会。利益が残ったかを、御社の数字で確かめます。</p></div></li>
+    </ol>
+    <a class="growth-cta" href="price.html">料金表へ<i aria-hidden="true"></i></a>
   </div>
 </section>
 
@@ -237,7 +169,7 @@
             <li>取りこぼしている売上機会</li>
           </ul>
         </div>
-        <img src="assets/il-step-01.jpg" alt="" width="1200" height="800" loading="lazy">
+        <img src="assets/v-flow-01.jpg" alt="" width="1200" height="800" loading="lazy">
       </li>
       <li class="step reveal">
         <div class="step-num" aria-hidden="true">2</div>
@@ -246,7 +178,7 @@
           <p>お聞きした内容をもとに、どの業務から手をつけると効果が大きいかを整理します。</p>
           <p class="promise">「利益改善が見込めない場合は、始める前にそうお伝えします。」</p>
         </div>
-        <img src="assets/il-step-02.jpg" alt="" width="1200" height="800" loading="lazy">
+        <img src="assets/v-flow-02.jpg" alt="" width="1200" height="800" loading="lazy">
       </li>
       <li class="step reveal">
         <div class="step-num" aria-hidden="true">3</div>
@@ -254,7 +186,7 @@
           <h3>進め方とお見積もりをお示しします</h3>
           <p>何を、どの順番で、どのくらいの期間・費用で進めるかを工程表でお見せします。費用対効果をご確認いただいてから、ご判断ください。無理な売り込みはしません。</p>
         </div>
-        <img src="assets/il-step-03.jpg" alt="" width="1200" height="800" loading="lazy">
+        <img src="assets/v-flow-03.jpg" alt="" width="1200" height="800" loading="lazy">
       </li>
       <li class="step reveal">
         <div class="step-num" aria-hidden="true">4</div>
@@ -262,7 +194,7 @@
           <h3>ご納得いただいてからご契約</h3>
           <p>内容と費用にご納得いただいてから、ご契約となります。ご契約後は2週間に1回お伺いし、定着するまで隣で伴走します。研修・伴走・代行の組み合わせは、御社の状況に合わせて柔軟に設計します。</p>
         </div>
-        <img src="assets/il-step-04.jpg" alt="" width="1200" height="800" loading="lazy">
+        <img src="assets/v-flow-04.jpg" alt="" width="1200" height="800" loading="lazy">
       </li>
     </ol>
   </div>
@@ -275,7 +207,7 @@
     <p class="sec-lead">運送・自動車関連をはじめ、現場のある会社を業種を問わず支援しています。</p>
     <div class="grid-3 mt-56">
       <article class="case-card reveal">
-        <img src="assets/case-01.jpg" alt="" width="1200" height="800" loading="lazy">
+        <div class="pic"><img src="assets/v-case-01.jpg" alt="" width="1200" height="800" loading="lazy"></div>
         <div class="case-body">
           <span class="case-tag">運送</span>
           <h3 class="case-name">門正運輸株式会社 様</h3>
@@ -285,7 +217,7 @@
         </div>
       </article>
       <article class="case-card reveal">
-        <img src="assets/case-02.jpg" alt="" width="1200" height="800" loading="lazy">
+        <div class="pic"><img src="assets/v-case-02.jpg" alt="" width="1200" height="800" loading="lazy"></div>
         <div class="case-body">
           <span class="case-tag">自動車関連</span>
           <h3 class="case-name">ケイズモビリティ 様</h3>
@@ -295,7 +227,7 @@
         </div>
       </article>
       <article class="case-card reveal">
-        <img src="assets/case-03.jpg" alt="" width="1200" height="800" loading="lazy">
+        <div class="pic"><img src="assets/v-case-03.jpg" alt="" width="1200" height="800" loading="lazy"></div>
         <div class="case-body">
           <span class="case-tag">グループ経営</span>
           <h3 class="case-name">FUJINO GROUP 様</h3>
@@ -305,20 +237,8 @@
         </div>
       </article>
     </div>
-    <p class="note mt-24">※ 写真はイメージです。</p>
+    <p class="note mt-24">※ 画像はイメージです。</p>
     <p class="sec-foot"><a class="text-link" href="works.html">導入事例を詳しく見る</a></p>
-  </div>
-</section>
-
-<section class="section section--bg" id="philosophy">
-  <div class="container split">
-    <div class="prose reveal">
-      <p class="sec-label">私たちの考え方</p>
-      <h2 class="sec-title">AIを入れて、<br><span class="nw">人はもっと、</span><span class="nw">人らしく働く。</span></h2>
-      <p>AIに任せられることはAIに任せ、人は、人にしかできない仕事に力を注ぐ。働きがいが高まり、生産性が上がり、会社に利益が残っていく。それが、AI Linqs の考える<span class="nw">「人とAIのハイブリッド経営」</span>です。</p>
-      <p class="sec-foot"><a class="text-link" href="about.html">会社概要を見る</a></p>
-    </div>
-    <img class="reveal" src="assets/il-philosophy.jpg" alt="社員同士が笑顔で話し合う様子" width="1200" height="800" loading="lazy">
   </div>
 </section>
 
@@ -381,6 +301,6 @@
   </div>
 </footer>
 <div class="sticky-cta" id="stickyCta" hidden><a class="btn btn--line " href="contact.html#contact" data-line-cta><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3C6.5 3 2 6.6 2 11.1c0 4 3.6 7.4 8.400 8 .6.1 1.300.4 1.500.8.2.4.1 1 .1 1.400l-.1.800c0 .3-.2 1 .900.600s5.700-3.400 7.700-5.800C21.500 15.300 22 13.300 22 11.100 22 6.600 17.500 3 12 3z"/></svg>LINEで相談</a><a class="btn btn--ghost " href="price.html">料金表を見る</a></div>
-<div class="test-badge" id="testBadge" hidden>テスト版 v6</div>
+<div class="test-badge" id="testBadge" hidden>テスト版 v6.2</div>
 </body>
 </html>
