@@ -11,7 +11,9 @@
   fab.setAttribute('data-line-cta', '');
   const icon = d.querySelector('.btn--line svg');
   if (icon) fab.appendChild(icon.cloneNode(true));
-  fab.appendChild(d.createTextNode('LINEで相談'));
+  const fabText = d.createElement('span');
+  fabText.innerHTML = 'LINEで<br>相談';
+  fab.appendChild(fabText);
   d.body.appendChild(fab);
 
   // LINE のボタン：リンク先を公式アカウントに差し替え（JS無効時はお問い合わせページへ）

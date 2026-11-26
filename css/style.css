@@ -420,10 +420,10 @@ dl.info dd{font-size:15px;color:var(--text)}
 
 .contact-card .sec-label{color:var(--blue);margin-top:0}
 
-/* ---------- 右下に固定の LINE ボタン（スマホ下部の帯の代わり） ---------- */
-.line-fab{position:fixed;right:20px;bottom:calc(20px + env(safe-area-inset-bottom));z-index:95;display:inline-flex;align-items:center;gap:10px;background:var(--green);color:#fff;font-weight:700;font-size:15px;line-height:1;padding:17px 24px;border-radius:9999px;box-shadow:0 10px 28px rgba(6,120,60,.35);transition:background .2s,transform .2s}
-.line-fab svg{width:22px;height:22px}
-.line-fab:hover{background:var(--green-dark);transform:translateY(-3px)}
+/* ---------- 右下に固定の丸い LINE ボタン（画面の角から少しはみ出す。スマホ下部の帯の代わり） ---------- */
+.line-fab{position:fixed;right:-30px;bottom:-30px;z-index:95;width:168px;height:168px;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;padding:0 26px 26px 0;background:var(--green);color:#fff;font-weight:700;font-size:15px;line-height:1.35;text-align:center;letter-spacing:.04em;box-shadow:0 12px 36px rgba(6,120,60,.4);transition:background .2s,transform .25s}
+.line-fab svg{width:34px;height:34px}
+.line-fab:hover{background:var(--green-dark);transform:translate(-8px,-8px) scale(1.04)}
 .sticky-cta{display:none !important}
-@media (max-width:600px){.line-fab{right:12px;bottom:calc(12px + env(safe-area-inset-bottom));padding:14px 18px;font-size:14px}.footer{padding-bottom:88px}}
+@media (max-width:600px){.line-fab{right:-24px;bottom:-24px;width:128px;height:128px;padding:0 20px 20px 0;font-size:13px;gap:3px}.line-fab svg{width:26px;height:26px}.footer{padding-bottom:110px}}
 @media print{.line-fab{display:none}}
