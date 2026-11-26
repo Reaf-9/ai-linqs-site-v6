@@ -4,6 +4,16 @@
   const d = document;
   d.documentElement.classList.add('js');
 
+  // 右下に固定の LINE ボタン（全ページ共通。スクロールしても常に見える）
+  const fab = d.createElement('a');
+  fab.className = 'line-fab';
+  fab.href = 'contact.html#contact';
+  fab.setAttribute('data-line-cta', '');
+  const icon = d.querySelector('.btn--line svg');
+  if (icon) fab.appendChild(icon.cloneNode(true));
+  fab.appendChild(d.createTextNode('LINEで相談'));
+  d.body.appendChild(fab);
+
   // LINE のボタン：リンク先を公式アカウントに差し替え（JS無効時はお問い合わせページへ）
   const LINE_URL = 'https://lin.ee/XFEkgJS';
   d.querySelectorAll('[data-line-cta]').forEach(link => {

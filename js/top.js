@@ -7,7 +7,7 @@
   d.documentElement.classList.add('top-anim');
 
   // 画面に入ったら is-in を付ける（見出しの青帯・グラフ・右上がりの図）
-  const once = d.querySelectorAll('.sec-title, .chart, .growth-stage, .stats');
+  const once = d.querySelectorAll('.sec-title, .sec-en, .chart, .growth-stage, .stats');
   const lines = d.querySelectorAll('.chart .line');
   lines.forEach(l => {
     const len = Math.ceil(l.getTotalLength());

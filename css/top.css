@@ -11,6 +11,7 @@
   --ink:#101C34; --r-s:0px; --r-m:0px; --r-l:0px;
   --u:min(1vw,16px);
   --ease:cubic-bezier(.2,.8,.2,1);
+  --deep:#1B2F9B; --num:"Barlow Condensed","Inter","Noto Sans JP",sans-serif;
 }
 .top .btn{border-radius:0;font-weight:500;letter-spacing:.08em}
 .top .site-header{border-bottom-color:transparent;box-shadow:0 1px 0 rgba(16,28,52,.06)}
@@ -80,7 +81,7 @@
 
 /* ---------- 人はもう採れない（グラフ） ---------- */
 .top .why-now{position:relative;background:linear-gradient(180deg,#DCEBFA 0%,#C9DFF7 100%);padding:128px 0 150px;padding-top:calc(128px + 3*var(--u))}
-.top .why-now::before,.top #impact::before{content:"";position:absolute;left:0;right:0;top:-1px;height:calc(5.6*var(--u) + 1px);background:#fff;clip-path:polygon(0 0,100% 0,0 100%);pointer-events:none}
+.top .why-now::before,.top #impact::before{content:"";position:absolute;left:0;right:0;top:-1px;height:calc(5.6*var(--u) + 1px);background:#fff;clip-path:polygon(0 0,100% 0,100% 100%);pointer-events:none}
 .chart-wrap{margin:56px auto 0;max-width:960px;background:#fff;padding:40px 44px 28px;box-shadow:0 24px 60px rgba(36,113,198,.14)}
 .chart-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:8px 24px}
 .chart-head h3{font-size:17px}
@@ -220,4 +221,41 @@
   .chart{overflow-x:auto;-webkit-overflow-scrolling:touch}
   .chart svg{min-width:600px}
   .g-item:nth-child(2),.g-item:nth-child(3){margin-left:0}
+}
+
+/* ---------- v6.3 見出し：縦長の英字（濃い青）＋下線、その下に日本語の見出し ---------- */
+.sec-en{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:clamp(54px,6.6vw,96px);line-height:1;letter-spacing:.035em;color:var(--deep);text-align:center;transition:opacity .8s ease,transform .9s var(--ease)}
+.sec-en::after{content:"";display:block;width:72px;height:4px;background:var(--deep);margin:18px auto 0;transform-origin:left;transition:transform .9s var(--ease) .25s}
+.section--navy .sec-en{color:#8FB8FF}.section--navy .sec-en::after{background:#8FB8FF}
+.js.top-anim .sec-en:not(.is-in){opacity:0;transform:translateY(24px)}
+.js.top-anim .sec-en:not(.is-in)::after{transform:scaleX(0)}
+.top .sec-title{font-weight:500;font-size:clamp(20px,2.3vw,30px);letter-spacing:.1em;margin-top:26px;line-height:1.7}
+.top .sec-title::after{display:none}
+.top .sec-lead{margin-top:24px}
+.top .stat-num{font-size:42px;font-weight:600;letter-spacing:.02em}
+.top .stat-num.is-text{font-size:24px}
+.top .step-num{font-family:var(--num);font-size:26px;font-weight:600}
+.top .cost-card h3 span{font-size:1.25em;font-weight:600}
+.top .faq summary::before,.top .faq .answer::before{font-weight:600;font-size:26px}
+.g-text .g-step{font-family:var(--font)}
+.chart text{font-size:14px;font-weight:500}
+.top .test-badge{pointer-events:auto}.top .test-badge a{text-decoration:underline}
+.top .line-fab{border-radius:0}
+@media (max-width:600px){.top .stat-num{font-size:32px}.top .stat-num.is-text{font-size:19px}}
+.top .logo{font-family:"Inter","Noto Sans JP",sans-serif}
+
+/* ---------- v6.3 ヒーロー：人物は写真の中（はみ出さない）。下辺は直線。青帯が写真の下辺をまたぐ ---------- */
+.kv--b{height:calc(51.5*var(--u))}
+.kv--b .kv-photo{height:calc(45*var(--u));clip-path:none}
+.kv--b .kv-bg{object-position:70% 12%}
+.kv--b .kv-copy{top:calc(25.3*var(--u));font-size:calc(5.1*var(--u))}
+.kv--b .kv-copy .band{height:calc(7.2*var(--u))}
+.kv--b .kv-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(255,255,255,.28),rgba(255,255,255,0) 55%)}
+.lead-sec{padding-top:calc(4*var(--u))}
+@media (max-width:900px){
+  .kv--b{height:calc(60*var(--u))}
+  .kv--b .kv-photo{height:calc(52*var(--u))}
+  .kv--b .kv-bg{object-position:82% 12%}
+  .kv--b .kv-copy{top:calc(33*var(--u))}
+  .lead-sec{padding-top:24px}
 }
