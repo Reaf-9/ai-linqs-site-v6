@@ -1,0 +1,13 @@
+/* 動画版（top-video.html だけが読み込む）。ヒーローの背景が映像。人物の切り抜きは置かない */
+.kv--video{height:calc(50*var(--u))}
+.kv--video .kv-photo{height:100%;clip-path:none;background:#0B2A5C}
+.kv--video .kv-video{width:100%;height:100%;object-fit:cover;animation:none}
+.kv--video .kv-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,24,60,.62) 0%,rgba(8,24,60,.28) 55%,rgba(8,24,60,.12) 100%),linear-gradient(0deg,rgba(8,24,60,.35),rgba(8,24,60,0) 45%);pointer-events:none}
+.kv--video .kv-net{display:none}
+.kv--video .kv-copy{top:calc(20.5*var(--u))}
+.top-video .lead-sec{padding-top:calc(6*var(--u))}
+@media (max-width:900px){
+  .kv--video{height:calc(62*var(--u))}
+  .kv--video .kv-copy{top:calc(34*var(--u))}
+  .top-video .lead-sec{padding-top:48px}
+}

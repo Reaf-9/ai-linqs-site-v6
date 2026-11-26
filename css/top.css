@@ -310,3 +310,6 @@
 .top{--band-kv:#327AFA}
 .kv-copy .band::before{box-shadow:0 calc(.9*var(--u)) calc(2.6*var(--u)) rgba(3,18,60,.5),0 2px 6px rgba(3,18,60,.3)}
 .kv-copy .band > span{text-shadow:0 2px 10px rgba(3,18,60,.25)}
+
+.top .test-badge b{font-weight:700;text-decoration:none;opacity:.75}
+.top .test-badge{right:12px;max-width:calc(100vw - 24px)}
